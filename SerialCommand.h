@@ -34,7 +34,7 @@
 #include <string.h>
 
 // Size of the input buffer in bytes (maximum length of one command plus arguments)
-#define SERIALCOMMAND_BUFFER 32
+#define SERIALCOMMAND_BUFFER 64
 // Maximum length of a command excluding the terminating null
 #define SERIALCOMMAND_MAXCOMMANDLENGTH 8
 
@@ -51,6 +51,7 @@ class SerialCommand {
     void readSerial();    // Main entry point.
     void clearBuffer();   // Clears the input buffer.
     char *next();         // Returns pointer to next token found in command buffer (for getting arguments to commands).
+	char *current();      // Returns pointer to current token found in command buffer (for getting arguments to commands).
 
   private:
     // Command/handler dictionary
