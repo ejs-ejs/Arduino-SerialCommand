@@ -142,3 +142,11 @@ void SerialCommand::clearBuffer() {
 char *SerialCommand::next() {
   return strtok_r(NULL, delim, &last);
 }
+
+/**
+ * Retrieve the first token ("word" or "argument") from the command buffer.
+ * Returns NULL if no more tokens exist.
+ */
+char *SerialCommand::current() {
+  return strtok_r(buffer, delim, &last);
+}
