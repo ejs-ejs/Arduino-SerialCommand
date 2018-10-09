@@ -1,0 +1,23 @@
+{
+  "libraries": [
+    {
+      "name": "SerialCommand",
+      "version": "1.0.0",
+      "author": "Steven Cogswell, kroimon",
+      "maintainer": "kroimon",
+      "sentence": "A Wiring/Arduino library to tokenize and parse commands received over a serial port.",
+      "paragraph": "",
+      "website": "https://github.com/kroimon/Arduino-SerialCommand",
+      "category": "Communication",
+      "architectures": [
+        "*"
+      ],
+      "types": [
+        "Arduino"
+      ],
+      "repository": "https://github.com/kroimon/Arduino-SerialCommand.git",
+      "url": "https://github.com/kroimon/Arduino-SerialCommand/archive/master.zip",
+      "archiveFileName": "SerialCommand-1.0.0.zip"
+    },
+ ]
+}
